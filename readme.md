@@ -7,6 +7,12 @@ Working with AWS Lambda + ApiGateway + DynamoDB (microservice)
 
 ---
 
+- credits:
+- [AWS docs](https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway-tutorial.html#services-apigateway-tutorial-prereqs)
+- [DynamoDB docs](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scan_section.html)
+
+---
+
 To zip your file for lambda use the following command:
 
 ```bash
