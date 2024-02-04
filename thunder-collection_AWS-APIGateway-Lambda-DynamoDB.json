@@ -1,0 +1,85 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AWS-APIGateway-Lambda-DynamoDB",
+    "dateExported": "2024-02-04T22:22:21.620Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ae61fdf7-039c-4df2-891b-d8a1d1a3fa8d",
+            "colId": "de9ddb7b-d7f5-4c10-b3a2-2c4e4f8a5d40",
+            "containerId": "",
+            "name": "Update DynamoDB Item",
+            "url": "https://o9ds320k05.execute-api.us-west-2.amazonaws.com/test/DynamoDBManager",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-04T22:20:13.896Z",
+            "modified": "2024-02-04T22:20:13.896Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"operation\": \"update\",\n  \"payload\": {\n    \"Key\": {\n      \"id\": \"32145BCD\"\n    },\n    \"AttributeUpdates\": {\n      \"company\": {\n        \"Value\": \"www.deejaydev.work\"\n      },\n      \"phone\": {\n        \"Value\": 12345887456\n      }\n    }\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a416e5c6-d86a-49ca-8f83-69a71a5322f4",
+            "colId": "de9ddb7b-d7f5-4c10-b3a2-2c4e4f8a5d40",
+            "containerId": "",
+            "name": "Create DynamoDB Item",
+            "url": "https://o9ds320k05.execute-api.us-west-2.amazonaws.com/test/DynamoDBManager",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-04T22:20:51.072Z",
+            "modified": "2024-02-04T22:20:51.072Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"operation\": \"create\",\n  \"payload\": {\n    \"Item\": {\n      \"id\": \"32145BCD\",\n      \"company\": \"Deejaydev\",\n      \"phone\": 980123456789\n    }\n  }\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d3aa05c-9390-4fb1-96af-2c1e4bc17d6d",
+            "colId": "de9ddb7b-d7f5-4c10-b3a2-2c4e4f8a5d40",
+            "containerId": "",
+            "name": "Delete DynamoDB Item",
+            "url": "https://o9ds320k05.execute-api.us-west-2.amazonaws.com/test/DynamoDBManager",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-04T22:21:20.506Z",
+            "modified": "2024-02-04T22:21:20.506Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"operation\": \"delete\",\n  \"payload\": {\n    \"Key\": {\n      \"id\": \"32145BCD\"\n    }\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ef68adf0-f08c-4893-a053-039bfd09d589",
+            "colId": "de9ddb7b-d7f5-4c10-b3a2-2c4e4f8a5d40",
+            "containerId": "",
+            "name": "Read DynamoDB",
+            "url": "https://o9ds320k05.execute-api.us-west-2.amazonaws.com/test/DynamoDBManager",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-04T22:21:28.406Z",
+            "modified": "2024-02-04T22:21:28.406Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"operation\": \"read\",\n  \"payload\": {\n    \"Key\": {\n      \"id\": \"32145BCD\"\n    }\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
